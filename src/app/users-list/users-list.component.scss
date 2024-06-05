@@ -1,0 +1,72 @@
+.bg{
+  // background-color: black;
+  background-image: linear-gradient(to bottom right, rgb(4, 11, 7), rgb(118, 120, 115));
+  height: 100%;
+
+}
+
+.search{
+  margin-right: 50px;
+}
+
+table {
+    width: 100%;
+    // background-color: rgb(8, 37, 62);
+    background-color: rgb(15, 16, 15);
+    // border: 1px solid;
+    // border-radius: 1px;
+    box-shadow: 10px 10px 5px rgb(41, 46, 43);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+td {
+  color: rgb(236, 236, 237);
+  font-size: 15px;
+}
+
+th{
+  color: rgb(251, 222, 183);
+  font-size: medium;
+}
+
+.he{
+  color: rgb(218, 218, 211);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+::ng-deep .mat-mdc-paginator{
+  // background-image: linear-gradient(to bottom right, rgb(4, 11, 7), rgb(118, 120, 115));
+  background:none !important ;
+  
+  
+}
+
+.mat-mdc-paginator{
+  color: white;
+}
+::ng-deep .mat-mdc-select-value{
+  color: white;
+}
+
+::ng-deep .mat-mdc-paginator-outer-container{
+  margin-right: 500px;
+}
+::ng-deep tbody, td, tfoot, th, thead, tr{
+  border-radius: 10px !important;
+}
+
+.thead tr th:first-child {
+  padding-inline-end: 0 !important;
+  padding-inline-start: 0 !important;
+  border-start-start-radius: 8px;
+  border-end-start-radius: 8px;
+  width: 300px !important;
+}
+
+.rounded-table {
+  border-radius: 5px;
+  overflow: hidden; /* This ensures that the border-radius is applied correctly */
+}

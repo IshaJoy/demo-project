@@ -1,0 +1,88 @@
+<nav class="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            <img class="w-25" src="https://userlogin.aptitudebuster.com/img/login-illus-1.46cf6e91.svg" alt="">
+            Demo
+        </a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1>Welcome <span class="text-primary">{{user}}</span></h1>
+    <div class="m-5 border rounded p-5 d-flex justify-content-between">
+        <input [(ngModel)]="hobbies" placeholder="Enter your Hobbies" type="text" class="form-control">
+        <button class="btn btn-success ms-4">Submit</button>
+    </div>
+    <p *ngIf="hobbies" class="fs-3 text-danger">Hobbies are: {{hobbies}} </p>
+
+    <!-- table -->
+
+    <table class="table mt-5">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- i=index is predefined  -->
+            <tr *ngFor="let emp of allEmployee;let i=index">
+                <td>{{i+1}}</td>
+                <td>{{emp.empId}}</td>
+                <td>{{emp.empName}}</td>
+                <td>{{emp.empSalary}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <!-- <mat-card>
+        <mat-card-content>Simple card</mat-card-content>
+      </mat-card> -->
+</div>
+
+<!-- cards -->
+
+<div class=" full-cantainer ms-5 mt-5">
+
+    <div class="card" style="width: 340px;height: 199px;border: 2px dashed #D1D4DC;border-radius: 8px;">
+        <div class="card-body">
+            <div class="d-flex sec1">
+                <div class="d-flex" style="width: 250px;height: 46px;">
+                    <img class="img1" src="/assets/images/Group 5715@2x.png" alt="">
+                    <div style="margin-left: 15px;">
+                        <h2 style="font-size: 20px;font-weight: bold;">8965 RXB</h2>
+                        <br>
+                        <div style="font-size: 14px;align-items: start;width: 201px;height: 16px;margin-top: -30px;">
+                            Mujamma’ al-Riyadh al-Hathimi</div>
+                    </div>
+                </div>
+
+                <img class="img2" src="assets\images\Group 5803@2x.png" alt="">
+
+            </div>
+
+            <p style="width: 160px;height: 15px;margin-top: 28px;">Last Serviced: 06/04/2023</p>
+
+            <div class="d-flex sec2">
+                <div class="d-flex sec2_1">
+                    <img style="width: 28px;height: 28px;margin-top: 18px;margin-left: 15px;" src="\assets\images\Group 4847@2x.png" alt="">
+
+                    <div style="margin-left: 10px;">
+                        <div style="font-size: 13px;letter-spacing: 0.26px;
+                        color:  #01BDF4;
+                        opacity: 1;width: 113px;margin-top: 14px;">Maintenance Type:</div>
+                        <br>
+                        <div style="font-size: 16px;font-weight: bold;margin-top: -22px;">Regular Service</div>
+                    </div>
+                    <img class="img4" src="\assets\images\Group 5722@2x.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>

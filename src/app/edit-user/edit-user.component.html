@@ -1,0 +1,47 @@
+<h1 mat-dialog-title class="mt-4 align-items-center d-flex justify-content-center" style="font-family: 'Times New Roman', Times, serif;">Edit User Form</h1>
+    <div  mat-dialog-content>
+      <div style="height:80%" class="w-100 d-flex align-items-center justify-content-center flex-column ">
+    
+        <form class="border rounded p-3 w-75 mt-5">
+          <div class="mb-3">
+            <label class="form-floating" for="floatingInputId">Employee Id</label>
+            <input type="text" class="form-control" id="floatingInputId" [(ngModel)]="user.empId" name="empId"
+              pattern="[a-zA-Z0-9]*">
+          </div>
+          
+
+          <div class="mb-3">
+            <label for="floatingInputName">Username</label>
+            <input type="text" class="form-control" id="floatingInputName" [(ngModel)]="user.username" name="username"
+              pattern="[a-zA-Z ]*">
+          </div>
+          
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1"  [(ngModel)]="user.email" name="email">
+          </div>
+
+          <div class=" form-floating mb-3">
+            <select class="form-control" id="floatingInputstatus" name="status" [(ngModel)]="user.status">
+              <option disabled selected hidden value=""></option>
+              <option value="1">Active</option>
+              <option value="0">Inactive</option>
+
+            </select>
+            <label for="floatingInputstatus" class="form-label">Status</label>
+
+          </div>
+
+          <div class="text-center">
+
+            <button class="btn btn-warning me-5" (click)="cancel()">Cancel</button>
+            <button  class="btn btn-success" (click)="updateUser()">Update</button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+

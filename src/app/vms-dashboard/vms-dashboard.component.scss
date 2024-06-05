@@ -1,0 +1,36 @@
+.full-cantainer{
+    height: 100%; 
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .card{
+        width: 50%;
+        height: 80px;
+        border: none;
+        opacity: 1;
+        
+    }
+    #card-bg{
+        
+        margin-top: 15px;
+        background: transparent linear-gradient(180deg, var(--unnamed-color-ffffff) 0%, #EDFFF1 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(180deg, #FFFFFF 0%, #EDFFF1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 8px 0px 0px 8px;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #card-bg1{
+        
+        margin-top: 15px;
+        background: transparent linear-gradient(180deg, var(--unnamed-color-ffffff) 0%, #EAF9FF 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(180deg, #FFFFFF 0%, #EAF9FF 100%) 0% 0% no-repeat padding-box;
+        border-radius: 0px 8px 8px 0px;
+        opacity: 1;
+    }
+    
+}
+
